@@ -1,0 +1,100 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--blue);
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h1 {
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.75rem;
+  margin-top: 7rem;
+  color: var(--white);
+  text-align: left;
+}
+
+.subtitle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+
+.subtitle p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: var(--text-highlight);
+  padding-left: 1rem;
+}
+
+.form label {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+  height: 5rem;
+  border-top-left-radius: 0.75rem; 
+  border-bottom-left-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.form label input {
+  flex: 1;
+  border: none;
+  height: 100%;
+  background: inherit;
+  padding: 1.25rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.form label input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: #B2B9FF;
+}
+
+
+.form label img {
+  flex: 1;
+  height: 100%;
+  padding: 1.75rem;
+
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+
+  transition: padding 0.2s;
+  transition: background 0.2s;
+} 
+
+.form label img.available {
+  background: var(--green);
+}
+
+.form label img.unavailable {
+  background: var(--blue-dark);
+}
+
+.form label img:hover {
+  padding: 1.7rem;
+}
